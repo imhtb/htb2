@@ -1,0 +1,68 @@
+@import 'color';
+@import 'mq';
+.style {
+    width: 100%;
+    padding:1rem calc((100% - 1200px) / 2);
+    position: relative;
+    height: 120vh;
+    &__style-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10rem;
+    }
+    &__style-grid__style-grid-item__img{
+        width: 100%;
+    }
+    &__style-grid__style-grid-item__span {
+        display: block;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        color: $lightash;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    &__style-grid__style-grid-item__h3 {
+        font-size: 2.5rem;
+        color: $ash;
+        font-family: 'Playfair Display', serif;
+        padding: 2rem 0;
+    }
+    &__style-grid__style-grid-item__p {
+        font-size: 1.6rem;
+        color: $ash;
+        font-family: 'Playfair Display', serif;
+        text-align:justify;
+    }
+    &__btn {
+        font-size: 3rem;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 5rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        &__a {
+            color: $ash;
+            border: 0.1rem solid $ash;
+            padding: 1rem 3rem;
+        }
+    }
+  
+}
+.style__btn:hover a {
+    text-decoration:none;
+    color: $black;
+}
+.style {
+    @include big-tab {
+        padding: 2rem;
+        height: 80vh;
+    }
+}
+.style__style-grid {
+    @include tab {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+}   

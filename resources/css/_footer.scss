@@ -1,0 +1,69 @@
+@import 'color';
+@import 'mq';
+.footer {
+    width: 100%;
+    padding: 0.5rem calc(( 100% - 1200px) / 2);
+    height: 20vh;
+    margin-top: 5rem;
+    font-size: 2rem;
+    background-color: $lightash;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $ash;
+   &__text {
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 2.1rem;
+   }
+   &__text__span{
+        margin-right: 2rem;
+   }
+    
+}
+.s-icon__text {
+    font-family: 'Ubuntu', sans-serif;
+    display: inline;
+    padding-right: 1rem;
+   }
+   .s-icon__list {
+    display: inline-block;
+   }
+.s-icon__list li {
+    display: inline-block;
+    & a{
+        color: $ash;
+        padding-right:1rem ;
+    }
+}
+.footer {
+    @include big-tab {
+        padding: 0 2rem;
+        margin-top: 80%;
+    }
+}
+.footer {
+    @include tab {
+        margin-top: 180%;
+        font-size: 1.6rem;
+    }
+}
+.footer {
+    @include mob {
+        margin-top: 185%;
+        font-size: 1.6rem;
+    }
+}
+
+.footer {
+    @include old-mob {
+        margin-top: 250%;
+        font-size: 1.6rem;
+    }
+}
+.footer {
+    @include oldmob {
+        margin-top: 300%;
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,34 @@
+@import 'color';
+@import 'mq';
+.dairy {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: calc((100% - 1200px) / 2);
+    &__span{
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        color: $lightash;
+    }
+    &__h3 {
+        font-size: 2.5rem;
+        color: $ash;
+        padding: 2rem 0;
+    }
+    &__p {
+        line-height: 1;
+        letter-spacing: 0.1rem;
+        color: $ash;
+        text-align: justify;
+    }
+    &__input {
+        border: none;
+        outline: none;
+        padding: 5rem 0;
+    }
+}
+.dairy {
+    @include big-tab {
+        padding: 2rem;
+    }
+}

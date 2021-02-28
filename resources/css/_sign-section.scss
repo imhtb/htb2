@@ -1,0 +1,45 @@
+@import 'color';
+@import 'mq';
+.sign {
+    width: 100%;
+    padding:calc((100% - 1200px) / 2) ;
+    background: $lightash;
+}
+.sign__center {
+    text-align: center;
+    &__h3 {
+        font-size: 3rem;
+        color: $ash;
+        padding: 3rem 0;
+        font-family: 'Inconsolata', monospace;
+    }
+    &__input {
+        font-size: 2rem;
+        width: 31%;
+        margin: 5rem 0;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 0.1rem solid $black;
+    }
+    &__icon {
+        font-size: 3rem;
+        color: $ash;
+    }
+}
+.sign__center__h3 {
+    @include tab {
+        font-size: 2rem;
+    }
+}
+.sign__center__input {
+    @include tab {
+        font-size: 1.6rem;
+        width: 45%;
+    }
+}
+.sign__center__icon {
+    @include tab {
+        font-size: 2rem;
+    }
+}
